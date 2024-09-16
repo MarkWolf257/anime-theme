@@ -87,6 +87,9 @@ body, html {
     display: flex;
     gap: 10px;
     padding: 10px;
+    position: absolute;    /* Remove the middle item from the flexbox flow */
+    left: 50%;             /* Push to 50% of the container width */
+    transform: translateX(-50%); /* Center it by moving it left by half its width */
 }
 
 #password-input {
