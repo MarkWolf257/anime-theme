@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+html {
+    font-size: 10px;
+}
+
 body, html {
     margin: 0;
     padding: 0;
