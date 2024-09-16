@@ -7,13 +7,30 @@
     <title>Anime Theme</title>
 </head>
 <body>
-    <div class="lockscreen">
-        <div class="time" id="time">10:21</div>
-        <div class="date" id="date">Sunday, 13th May</div>
-        <div class="form">
-            <img src="/path/to/avatar.png" alt="User Avatar" class="avatar">
-            <span class="username">Sambhunath Meher</span>
-            <input type="password" placeholder="Enter password..." class="password-input">
+    <div id="lockscreen">
+        <div id="time-date">
+            <div id="time">10:21</div>
+            <div id="date">Sunday, 13th May</div>
+        </div>
+
+        <div id="bar">
+            <div id="profile">
+                <img src="/path/to/avatar.png" alt="User Avatar" id="avatar">
+                <div>
+                    <div id="name">Sambhunath Meher</div>
+                    <div id="username">@sambhunath</div>
+                </div>
+            </div>
+
+            <form id="form">
+                <input type="password" placeholder="Enter password..." id="password-input">
+                <button>Login</button>
+            </form>
+            
+            <div id="util">
+                <img src="icons/reboot.svg" alt="Reboot" class="icon">
+                <img src="icons/poweroff.svg" alt="Poweroff" class="icon">
+            </div>
         </div>
     </div>
 
