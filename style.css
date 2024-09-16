@@ -52,8 +52,10 @@ body, html {
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     background-color: #212121;
     padding: 0.8rem;
@@ -87,9 +89,6 @@ body, html {
     display: flex;
     gap: 10px;
     padding: 10px;
-    position: absolute;    /* Remove the middle item from the flexbox flow */
-    left: 50%;             /* Push to 50% of the container width */
-    transform: translateX(-50%); /* Center it by moving it left by half its width */
 }
 
 #password-input {
@@ -106,8 +105,9 @@ body, html {
     color: white;
 }
 
-#utils {
+#util {
     display: flex;
+    margin-left: auto;
 }
 
 .icon {
